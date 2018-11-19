@@ -11,10 +11,13 @@ public class RotateRandom : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        Random.InitState((int)System.DateTime.Now.Ticks);
         randomX = Random.Range(5, 50);
         transform.Rotate(Vector3.right * Time.deltaTime * randomX);
+        Random.InitState((int)System.DateTime.Now.Ticks);
         randomX = Random.Range(5, 50);
         transform.Rotate(Vector3.up * Time.deltaTime * randomX);
+        Random.InitState((int)System.DateTime.Now.Ticks);
         randomX = Random.Range(5, 50);
         transform.Rotate(Vector3.forward * Time.deltaTime * randomX);
     }

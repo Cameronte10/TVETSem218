@@ -25,19 +25,22 @@ public class GameManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         timerCurrent -= Time.deltaTime;
         if (timerCurrent <= 0)
         {
+            tileIndex = Random.Range(0, tiles.Count);
+
             Instantiate(tiles[tileIndex], positions[posIndex], Quaternion.identity);
             timerCurrent = timerTotal;
-            if (tileIndex < tiles.Count - 1)
+            /*if (tileIndex < tiles.Count - 1)
             {
-                tileIndex++;
+                //tileIndex++;
             }
             else
             {
-                tileIndex = 0;
-            }
+                //tileIndex = 0;
+            }*/
 
             if (posIndex < positions.Count - 1)
             {
