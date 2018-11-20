@@ -89,26 +89,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1875808664612660}
-  m_LocalRotation: {x: 0, y: 0, z: 0.13660608, w: 0.9906255}
+  m_LocalRotation: {x: -0.03170456, y: -0.22991179, z: 0.13287602, w: 0.9635764}
   m_LocalPosition: {x: 2.125, y: -0.651, z: 0}
   m_LocalScale: {x: 1, y: 9.074953, z: 1}
   m_Children: []
   m_Father: {fileID: 4010870608284314}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 15.703}
+  m_LocalEulerAnglesHint: {x: 0, y: -26.84, z: 15.703}
 --- !u!4 &4878762177991098
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1210136463397680}
-  m_LocalRotation: {x: -0, y: -0, z: 0.13660882, w: -0.9906251}
+  m_LocalRotation: {x: 0.052342948, y: -0.37957507, z: -0.12618016, w: 0.91502}
   m_LocalPosition: {x: -2.125, y: -0.651, z: 0}
   m_LocalScale: {x: 1, y: 9.074953, z: 1}
   m_Children: []
   m_Father: {fileID: 4010870608284314}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -15.703001}
+  m_LocalEulerAnglesHint: {x: 0, y: -45.06, z: -15.703001}
 --- !u!23 &23060494130341812
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -124,7 +124,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 82f4e4875a1d71d498223c7b6f4e6f8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -159,7 +159,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 82f4e4875a1d71d498223c7b6f4e6f8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62416aa12784c9844ac1f919b6ccbf98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalSpeed: -4
+  verticalSpeed: -1
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114948885571189124
@@ -284,7 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62416aa12784c9844ac1f919b6ccbf98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalSpeed: -4
+  verticalSpeed: -1
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114950562681918138

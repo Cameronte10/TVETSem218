@@ -334,7 +334,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 82f4e4875a1d71d498223c7b6f4e6f8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -369,7 +369,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 82f4e4875a1d71d498223c7b6f4e6f8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -404,7 +404,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 82f4e4875a1d71d498223c7b6f4e6f8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -439,7 +439,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 82f4e4875a1d71d498223c7b6f4e6f8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -474,7 +474,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 82f4e4875a1d71d498223c7b6f4e6f8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -509,7 +509,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 82f4e4875a1d71d498223c7b6f4e6f8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -544,7 +544,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 82f4e4875a1d71d498223c7b6f4e6f8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -579,7 +579,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 82f4e4875a1d71d498223c7b6f4e6f8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -882,7 +882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62416aa12784c9844ac1f919b6ccbf98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalSpeed: -4
+  verticalSpeed: -1
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114090617528184372
@@ -908,7 +908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62416aa12784c9844ac1f919b6ccbf98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalSpeed: -4
+  verticalSpeed: -1
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114365524103360364
@@ -982,7 +982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62416aa12784c9844ac1f919b6ccbf98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalSpeed: -4
+  verticalSpeed: -1
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114660364027498330
@@ -996,7 +996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62416aa12784c9844ac1f919b6ccbf98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalSpeed: -4
+  verticalSpeed: -1
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114750034992197284
@@ -1010,7 +1010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62416aa12784c9844ac1f919b6ccbf98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalSpeed: -4
+  verticalSpeed: -1
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114760161273935536
@@ -1036,7 +1036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62416aa12784c9844ac1f919b6ccbf98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalSpeed: -4
+  verticalSpeed: -1
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114890398026675702
@@ -1050,7 +1050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62416aa12784c9844ac1f919b6ccbf98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalSpeed: -4
+  verticalSpeed: -1
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114917753769989302
@@ -1064,7 +1064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62416aa12784c9844ac1f919b6ccbf98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalSpeed: -4
+  verticalSpeed: -1
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114927738845552864

@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class HazardProperFall : MonoBehaviour {
     public float verticalSpeed;
+    public GameManagerScript instance;
     public float horizontalSpeed;
     public Rigidbody rb;
 	// Use this for initialization
 	void Start () {
+        instance = GameObject.Find("GameManager").GetComponent<GameManagerScript>();
         rb = GetComponent<Rigidbody>();
 	}
 	
@@ -21,6 +23,7 @@ public class HazardProperFall : MonoBehaviour {
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            
             Destroy(collision.gameObject);
         }
         else
