@@ -187,6 +187,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4354655840179214}
+  - component: {fileID: 114156492344994700}
   m_Layer: 0
   m_Name: Set1
   m_TagString: Untagged
@@ -883,6 +884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114090617528184372
@@ -897,6 +899,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomX: 0
+--- !u!114 &114156492344994700
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1890141323492556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67a48be4436f543bbccc62abbc586a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114253418411485298
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -909,6 +922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114365524103360364
@@ -983,6 +997,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114660364027498330
@@ -997,6 +1012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114750034992197284
@@ -1011,6 +1027,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114760161273935536
@@ -1037,6 +1054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114890398026675702
@@ -1051,6 +1069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114917753769989302
@@ -1065,6 +1084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114927738845552864

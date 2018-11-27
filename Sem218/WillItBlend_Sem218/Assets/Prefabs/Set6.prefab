@@ -124,6 +124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4787603175409786}
+  - component: {fileID: 114330271660732428}
   m_Layer: 0
   m_Name: Set6
   m_TagString: Untagged
@@ -583,6 +584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114284064947820178
@@ -597,8 +599,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
+--- !u!114 &114330271660732428
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1936651508118974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67a48be4436f543bbccc62abbc586a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114352757165040344
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -611,6 +625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114377798857113548
@@ -625,6 +640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114417180566951068
@@ -687,5 +703,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}

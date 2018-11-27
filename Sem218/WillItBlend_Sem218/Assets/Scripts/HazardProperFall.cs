@@ -32,4 +32,9 @@ public class HazardProperFall : MonoBehaviour {
         }
 
     }
+
+    void onDestroy()
+    {
+        transform.parent.GetComponent<Parent>().CheckForDestroy();
+    }
 }

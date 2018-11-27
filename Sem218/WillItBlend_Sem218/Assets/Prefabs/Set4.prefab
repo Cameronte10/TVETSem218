@@ -145,6 +145,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4163854948290896}
+  - component: {fileID: 114586687964817616}
   m_Layer: 0
   m_Name: Set4
   m_TagString: Untagged
@@ -230,7 +231,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1743940359151984}
   m_LocalRotation: {x: 0.16028787, y: -0.6845831, z: 0.6897334, w: 0.17297879}
-  m_LocalPosition: {x: 0.98, y: 2.23, z: 0}
+  m_LocalPosition: {x: 1.37, y: 4.68, z: 0}
   m_LocalScale: {x: 0.7792303, y: 1.4856302, z: -0.9127301}
   m_Children: []
   m_Father: {fileID: 4163854948290896}
@@ -675,6 +676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114127489863412954
@@ -725,8 +727,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
+--- !u!114 &114586687964817616
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1964302325658854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67a48be4436f543bbccc62abbc586a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114697428477010518
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -751,6 +765,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114829493561023314
@@ -777,6 +792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114885542241928620
@@ -791,6 +807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114921374673277854
@@ -805,6 +822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114976848004525866

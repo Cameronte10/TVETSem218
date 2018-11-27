@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-public class Button : MonoBehaviour {
+
+public class Parent : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,8 +13,12 @@ public class Button : MonoBehaviour {
 	void Update () {
 		
 	}
-    public void Clicked()
+
+    public void CheckForDestroy()
     {
-        SceneManager.LoadScene("Fall");
+        if (transform.childCount <= 0)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

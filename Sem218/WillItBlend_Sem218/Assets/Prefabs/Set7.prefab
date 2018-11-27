@@ -313,6 +313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4356237946490318}
+  - component: {fileID: 114300909143781906}
   m_Layer: 0
   m_Name: Set7
   m_TagString: Untagged
@@ -2999,6 +3000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114105192553349900
@@ -3037,6 +3039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114124405486053802
@@ -3063,6 +3066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114138085095954284
@@ -3077,6 +3081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114203468521593040
@@ -3091,6 +3096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114233701459216152
@@ -3117,6 +3123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114250159950290060
@@ -3131,6 +3138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114261031586679138
@@ -3145,6 +3153,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   randomX: 0
+--- !u!114 &114300909143781906
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1404368793816056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a67a48be4436f543bbccc62abbc586a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114320015856091856
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3157,6 +3176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114334372230155480
@@ -3171,6 +3191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114337630666240734
@@ -3245,6 +3266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114410644462551966
@@ -3283,6 +3305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114500232022633422
@@ -3297,6 +3320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114504008213518250
@@ -3311,6 +3335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114509808968365518
@@ -3337,6 +3362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114515691594639460
@@ -3363,6 +3389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114558942789515418
@@ -3377,6 +3404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114628242193901510
@@ -3403,6 +3431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114645230115343836
@@ -3429,6 +3458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114698420364853662
@@ -3467,6 +3497,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114731245927158716
@@ -3481,6 +3512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114788524940377074
@@ -3495,6 +3527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114818845718338748
@@ -3545,6 +3578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114891121340565144
@@ -3559,6 +3593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114898628553722654
@@ -3609,6 +3644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114953673885020436
@@ -3623,6 +3659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114967941529225188
@@ -3649,6 +3686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114982638211758444
@@ -3663,6 +3701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}
 --- !u!114 &114991288675274484
@@ -3677,5 +3716,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: -1
+  instance: {fileID: 0}
   horizontalSpeed: 0
   rb: {fileID: 0}

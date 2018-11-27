@@ -21,7 +21,6 @@ public class PlayerScript : MonoBehaviour {
 
     private void OnDestroy()
     {
-        Debug.Log("yo");
         GameManagerScript.instance.dead = true;
     }
 }
