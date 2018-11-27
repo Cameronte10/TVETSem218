@@ -34,7 +34,7 @@ public class GameManagerScript : MonoBehaviour
         if (dead == false)
         {
             curScore += increment * Time.deltaTime;
-            score.text = "Score: " + Mathf.RoundToInt(curScore);
+            score.text = "Score: " + Mathf.FloorToInt(curScore);
             timerCurrent -= Time.deltaTime;
         }
         else

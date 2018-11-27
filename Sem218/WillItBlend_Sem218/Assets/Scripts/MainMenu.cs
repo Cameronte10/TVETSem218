@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour {
     public Text textHighScore;
     public int score;
     public int highScore;
+    public string skins;
 	// Use this for initialization
 	void Start () {
         score = PlayerPrefs.GetInt("Score");
