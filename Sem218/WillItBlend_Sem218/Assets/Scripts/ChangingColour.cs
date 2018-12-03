@@ -8,6 +8,9 @@ public class ChangingColour : MonoBehaviour {
     // Use this for initialization
     public Light li;
     public Color c;
+    public Color32 green = new Color32(74, 255, 83, 255);
+    public Color32 blue = new Color32(74, 166, 255, 255);
+    public Color32 red = new Color32(255, 86, 73, 255);
     public string skin;
 	void Start () {
         skin = PlayerPrefs.GetString("skin");
@@ -17,17 +20,17 @@ public class ChangingColour : MonoBehaviour {
 	void Update () {
         if (skin == "Red")
         {
-            c = Color.red;
+            c = red;
             li.color = c;
         }
         if (skin == "Green")
         {
-            c = Color.green;
+            c = green;
             li.color = c;
         }
         if (skin == "Blue")
         {
-            c = Color.blue;
+            c = blue;
             li.color = c;
         }
     }

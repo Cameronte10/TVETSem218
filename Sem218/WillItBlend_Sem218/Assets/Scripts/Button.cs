@@ -5,10 +5,14 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class Button : MonoBehaviour {
     public string skin;
+    public Color32 green = new Color32(74, 255, 83, 255);
+    public Color32 blue = new Color32(74, 166, 255, 255);
+    public Color32 red = new Color32(255, 86, 73, 255);
     public bool picker = false;
     public Image image;
 	// Use this for initialization
 	void Start () {
+        
         image = GetComponent<Image>();
         skin = PlayerPrefs.GetString("skin");
         if (picker)
@@ -16,20 +20,20 @@ public class Button : MonoBehaviour {
             //ColourClicked();
             if (skin == "Red")
             {
-                image.color = Color.red;
+                image.color = red;
                 
 
             }
             else if (skin == "Green")
             {
-                image.color = Color.green;
+                image.color = green;
                 
             }
             else if (skin == "Blue")
             {
 
                 //image.color = new Color(1f / 255f, 1f / 86f, 1f / 73f);
-                image.color = Color.blue;
+                image.color = blue;
                 
             }
         }
@@ -49,7 +53,8 @@ public class Button : MonoBehaviour {
     {
         if (skin == "Red")
         {
-            image.color = Color.green;
+            //image.color = Color.green;
+            image.color = new Color32(74, 255, 83, 255);
             skin = "Green";
             PlayerPrefs.SetString("skin", "Green");
             
@@ -64,7 +69,7 @@ public class Button : MonoBehaviour {
         else if (skin == "Blue")
         {
             image.color = new Color32(255, 86, 73, 255);
-            image.color = Color.red;
+            //image.color = Color.red;
             skin = "Red";
             PlayerPrefs.SetString("skin", "Red");
         }

@@ -14,7 +14,8 @@ public class GameManagerScript : MonoBehaviour
     public bool dead = false;
     public float timerTotal;
     public float timerCurrent;
-
+    public int moneyCurrent;
+    public float moneyGained;
     public int tileIndex;
     public int posIndex;
 
@@ -22,7 +23,7 @@ public class GameManagerScript : MonoBehaviour
     void Start()
     {
         instance = this;
-        
+        moneyCurrent = PlayerPrefs.GetInt("money");
         score = GameObject.Find("Score").GetComponent<Text>();
         timerTotal = 2f;
         timerCurrent = timerTotal;
@@ -39,7 +40,10 @@ public class GameManagerScript : MonoBehaviour
         }
         else
         {
-            PlayerPrefs.SetInt("Score", Mathf.RoundToInt(curScore));
+            moneyGained = curScore / 10;
+            moneyCurrent += Mathf.FloorToInt(moneyGained);
+            PlayerPrefs.SetInt("money", moneyCurrent);
+            PlayerPrefs.SetInt("Score", Mathf.FloorToInt(curScore));
             SceneManager.LoadScene("Menu");
         }
        
