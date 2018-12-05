@@ -40,7 +40,7 @@ public class GameManagerScript : MonoBehaviour
         }
         else
         {
-            moneyGained = curScore / 10;
+            moneyGained = curScore;
             moneyCurrent += Mathf.FloorToInt(moneyGained);
             PlayerPrefs.SetInt("money", moneyCurrent);
             PlayerPrefs.SetInt("Score", Mathf.FloorToInt(curScore));

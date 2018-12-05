@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 public class ColourManager : MonoBehaviour
 {
 
@@ -10,10 +13,6 @@ public class ColourManager : MonoBehaviour
 
     public string skin;
     public List<Color32> colours;
-    public List<Color32> lockedColours;
-    //public Color32 green = new Color32(74, 255, 83, 255);
-    //public Color32 blue = new Color32(74, 166, 255, 255);
-    //public Color32 red = new Color32(255, 86, 73, 255);
     public bool picker = false;
     public Image image;
     public int index;
@@ -22,11 +21,48 @@ public class ColourManager : MonoBehaviour
 
     private void Awake()
     {
+        /*Screen.SetResolution(420, 747, false);
+        Screen.fullScreen = false;*/ //SETS SCREEN SIZE used for build testing
+        Load();
         instance = this;
-        //SceneManager.sceneLoaded += OnSceneLoaded;
+        SceneManager.sceneLoaded += OnSceneLoaded;
 
     }
-    
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (GameObject.Find("Picker") != null)
+        {
+            image = MenuButtonLink.instance.GetComponent<Image>();
+            image.color = colours[index];
+        }
+    }
+
+    public void Save()
+    {
+        //Save data to file
+        BinaryFormatter bf = new BinaryFormatter();
+        FileStream file = File.Open(Application.persistentDataPath + "/playerinfo.dat", FileMode.Open);
+
+        PlayerData data = new PlayerData();
+        data.colours = colours;
+        bf.Serialize(file, data);
+        file.Close();
+    }
+
+    public void Load()
+    {
+        //Load data from file
+        if (File.Exists(Application.persistentDataPath + "/playerinfo.dat"))
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Open(Application.persistentDataPath + "/playerinfo.dat", FileMode.Open);
+            PlayerData data = (PlayerData) bf.Deserialize(file);
+            file.Close();
+
+            colours = data.colours;
+        }
+    }
+
     void Start()
     {
         DontDestroyOnLoad(gameObject);
@@ -34,76 +70,38 @@ public class ColourManager : MonoBehaviour
         colours.Add(new Color32(74, 166, 255, 255));
         colours.Add(new Color32(255, 86, 73, 255));
         money = PlayerPrefs.GetInt("money");
-        if (GameObject.Find("Picker") != null)
-        {
-            image = MenuButtonLink.instance.GetComponent<Image>();
-        }
+        money = 3000;
         skin = PlayerPrefs.GetString("skin");
-        if (picker)
-        {
-            //ColourClicked();
-            image.color = colours[index];
-            /*if (skin == "Red")
-            {
-                image.color = red;
-                
 
-            }
-            else if (skin == "Green")
-            {
-                image.color = green;
-                
-            }
-            else if (skin == "Blue")
-            {
-
-                //image.color = new Color(1f / 255f, 1f / 86f, 1f / 73f);
-                image.color = blue;
-                
-            }*/
-        }
+        
 
     }
 
-    // Update is called once per frame
-    void Update()
+
+    private void OnApplicationPause(bool pause)
     {
-
+        if (pause)
+        {
+            Save(); //Save data when application is paused
+        }
+        
     }
+
+    private void OnApplicationQuit()
+    {
+        
+            Save(); //Save data when application is paused
+        
+    }
+
     public void Clicked()
     {
-        SceneManager.LoadScene("Fall");
+        SceneManager.LoadScene("Fall"); //Load game scene
     }
 
     public void ColourClicked()
     {
-        /*if (skin == "Red")
-        {
-            //image.color = Color.green;
-            image.color = new Color32(74, 255, 83, 255);
-            skin = "Green";
-            PlayerPrefs.SetString("skin", "Green");
-            
-        }
-        else if (skin == "Green")
-        {
-            //image.color = Color.blue;
-            image.color = new Color32(74, 166, 255, 255);
-            skin = "Blue";
-            PlayerPrefs.SetString("skin", "Blue");
-        }
-        else if (skin == "Blue")
-        {
-            image.color = new Color32(255, 86, 73, 255);
-            //image.color = Color.red;
-            skin = "Red";
-            PlayerPrefs.SetString("skin", "Red");
-        }
-        else
-        {
-            skin = "Blue";
-            ColourClicked();
-        }*/
+        //Increment colour List
         index++;
         if (index > colours.Count - 1)
         {
@@ -116,16 +114,22 @@ public class ColourManager : MonoBehaviour
     {
         if (money >= 100)
         {
-            byte randomR = (byte)Random.Range(1, 255);
-            byte randomG = (byte)Random.Range(1, 255);
-            byte randomB = (byte)Random.Range(1, 255);
-            colours.Add(new Color32(randomR, randomG, randomB, 255));
-            money -= 100;
-            PlayerPrefs.SetInt("money", money);
-
-            image.color = colours[colours.Count - 1];
+            //Generate random Colour
+            byte randomR = (byte)UnityEngine.Random.Range(1, 255);
+            byte randomG = (byte)UnityEngine.Random.Range(1, 255);
+            byte randomB = (byte)UnityEngine.Random.Range(1, 255);
+            colours.Add(new Color32(randomR, randomG, randomB, 255)); //Add new Colour to List
+            money -= 100; //Subtract money
+            PlayerPrefs.SetInt("money", money); //Set money
             //Send a message to Picker to update to latest colour
+            image.color = colours[colours.Count - 1];
             index = colours.Count - 1;
         }
     }
+}
+
+[Serializable]
+class PlayerData
+{
+    public List<Color32> colours;//Make colours persistent
 }
