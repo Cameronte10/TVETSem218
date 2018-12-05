@@ -70,7 +70,7 @@ public class ColourManager : MonoBehaviour
         colours.Add(new Color32(74, 166, 255, 255));
         colours.Add(new Color32(255, 86, 73, 255));
         money = PlayerPrefs.GetInt("money");
-        money = 3000;
+        //money = 3000;
         skin = PlayerPrefs.GetString("skin");
 
         
